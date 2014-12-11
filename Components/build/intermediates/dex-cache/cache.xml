@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="/Users/Evan/Downloads/facebook-android-sdk-3.18/samples/PlacePickerSample/build/intermediates/pre-dexed/debug/classes-19fab2a4295819087d97deef1a151d3c2fa93dfd.jar"
+        jar="/Users/Evan/Downloads/facebook-android-sdk-3.18/samples/PlacePickerSample/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="8694693636ab36910c8100ce527c258ff3ebece0"/>
+    <item
+        dex="/Users/Evan/Downloads/facebook-android-sdk-3.18/samples/PlacePickerSample/build/intermediates/pre-dexed/debug/internal_impl-20.0.0-d0d044e21cbfd752b0917286fea0d8223a5fa9d0.jar"
+        jar="/Users/Evan/Downloads/facebook-android-sdk-3.18/samples/PlacePickerSample/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/libs/internal_impl-20.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d"/>
+    <item
+        dex="/Users/Evan/Downloads/facebook-android-sdk-3.18/samples/PlacePickerSample/build/intermediates/pre-dexed/debug/bolts-android-1.1.2-27ffe5c388bf45b1adfbe6c248dd86dc5ffd89ea.jar"
+        jar="/Users/Evan/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.1.2/91c20388c9a45f62b5ed8fe0502bb76ff6251fc7/bolts-android-1.1.2.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="91c20388c9a45f62b5ed8fe0502bb76ff6251fc7"/>
+    <item
+        dex="/Users/Evan/Downloads/facebook-android-sdk-3.18/samples/PlacePickerSample/build/intermediates/pre-dexed/debug/classes-8a9b17d57c3426bf7ae50df17fa259da9907de3d.jar"
+        jar="/Users/Evan/Downloads/facebook-android-sdk-3.18/samples/PlacePickerSample/build/intermediates/exploded-aar/facebook-android-sdk-3.18/facebook/unspecified/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="8794691a187ac24c2740451f6f090b6b6df50f66"/>
+    <item
+        dex="/Users/Evan/Downloads/facebook-android-sdk-3.18/samples/PlacePickerSample/build/intermediates/pre-dexed/debug/support-annotations-20.0.0-bca9cd8c8082330ef7549e0398af852faae531fd.jar"
+        jar="/Applications/Android Studio.app/sdk/extras/android/m2repository/com/android/support/support-annotations/20.0.0/support-annotations-20.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="9d9013e9ff35fc3756411e62873c363c70c638fa"/>
+
+</pre-dex-items>
