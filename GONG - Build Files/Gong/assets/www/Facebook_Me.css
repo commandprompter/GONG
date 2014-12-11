@@ -1,0 +1,73 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("files/resources/lib/jquerymobile/1.4.4/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* mobilenavbar_18 */
+.Facebook_Me_mobilenavbar_18 {
+
+}
+.Facebook_Me_mobilenavbar_18 .ui-grid-a .ui-block-a {
+	clear:none;
+}
+.ui-footer .Facebook_Me_mobilenavbar_18 ul li:last-child a {
+	margin-right: 1px !important;
+}
+.ui-header .Facebook_Me_mobilenavbar_18 ul li:last-child a {
+	margin-right: -1px !important;
+}
+.Facebook_Me_mobilenavbar_18 ul.ui-grid-duo li:nth-child(even) a {
+	margin-right: 1px !important;
+}
+/* mobilecontainer2 */
+.ui-content.Facebook_Me_mobilecontainer2 {
+	padding: 15px 15px 15px 15px;
+}
+/* mobileimage_19 */
+.Facebook_Me_mobileimage_19 {
+	margin: 4px 0px 4px 0px;
+	width: 66px; height: 67px;
+	display: block;
+}
+/* Name */
+.Facebook_Me_Name {
+	font-weight: bold; color: #7d7d7d; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: -65px 0px 35px 75px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobiletoggle_28 */
+.Facebook_Me_mobiletoggle_28 {
+	margin: -30px 0px 10px 195px;
+}
+/* message */
+.Facebook_Me_message {
+	margin: 4px 0px 15px 0px;
+}
+/* post_message_button */
+#Facebook_Me_post_message_button {
+
+}
+.ui-btn.Facebook_Me_post_message_button {
+	margin: 4px 5px 15px 5px;
+}
+/* joinedevents */
+.Facebook_Me_joinedevents {
+	text-decoration: none; font-weight: bold; color: #7d7d7d; text-align: center; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 15px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilelist_36 */
+.ui-page .Facebook_Me_mobilelist_36 {
+	margin: 4px -15px 0px -15px;
+}
+/* mobilelistitem_37 */
+/* mobilelistitembutton_38 */
+.Facebook_Me_mobilelistitembutton_38 {
+
+}
+/* mobilefooter2 */
+.Facebook_Me_mobilefooter2 {
+	min-height:38px;
+}

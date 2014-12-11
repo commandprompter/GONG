@@ -1,0 +1,53 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("files/resources/lib/jquerymobile/1.4.4/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* mobilenavbar_12 */
+.Facebook_FindEvent_mobilenavbar_12 {
+
+}
+.Facebook_FindEvent_mobilenavbar_12 .ui-grid-a .ui-block-a {
+	clear:none;
+}
+.ui-footer .Facebook_FindEvent_mobilenavbar_12 ul li:last-child a {
+	margin-right: 1px !important;
+}
+.ui-header .Facebook_FindEvent_mobilenavbar_12 ul li:last-child a {
+	margin-right: -1px !important;
+}
+.Facebook_FindEvent_mobilenavbar_12 ul.ui-grid-duo li:nth-child(even) a {
+	margin-right: 1px !important;
+}
+/* mobilecontainer */
+.ui-content.Facebook_FindEvent_mobilecontainer {
+	padding: 15px 15px 15px 15px;
+}
+/* name */
+.Facebook_FindEvent_name {
+	margin: 4px 0px 15px 0px;
+}
+/* location */
+.Facebook_FindEvent_location {
+	margin: 4px 0px 15px 0px;
+}
+/* find_events */
+#Facebook_FindEvent_find_events {
+
+}
+.ui-btn.Facebook_FindEvent_find_events {
+	margin: 4px 5px 15px 5px;
+}
+/* mobilelist_33 */
+.ui-page .Facebook_FindEvent_mobilelist_33 {
+	margin: 4px -15px 0px -15px;
+}
+/* mobilelistitem_34 */
+/* mobilelistitembutton_35 */
+.Facebook_FindEvent_mobilelistitembutton_35 {
+
+}
+/* mobilefooter */
+.Facebook_FindEvent_mobilefooter {
+	min-height:38px;
+}

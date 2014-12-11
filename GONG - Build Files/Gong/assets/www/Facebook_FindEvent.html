@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            Facebook_FindEvent
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="initial-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <link href="files/resources/lib/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="files/resources/lib/theme/flat-ui/flat-ui.css" rel="stylesheet" />
+        <link href="files/resources/lib/jquerymobile/1.4.4/jquery.mobile.structure-1.4.4.css"
+        rel="stylesheet" />
+        <script type="text/javascript" src="files/resources/lib/underscore/underscore.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-2.1.1.js">
+        </script>
+        <script type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1)
+                {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                }
+                if (navigator.userAgent.toLowerCase().indexOf("msie") != -1)
+                {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                }
+                if (navigator.userAgent.match(/iP/i))
+                {
+                    $(window).bind('orientationchange', function(event)
+                    {
+                        $('meta[name="viewport"]').attr('content', 'initial-scale=1.0,maximum-scale=1.0, ' + ((window.orientation == 90 || window.orientation == -90 || window.orientation == 270) ? "height=device-width,width=device-height" : "height=device-height,width=device-width"));
+                    }).trigger('orientationchange');
+                }
+            });
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/1.4.4/jquery.mobile-1.4.4.js">
+        </script>
+        <script type="text/javascript" src="files/resources/js/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/appery.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/component-manager.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/mapping-impl.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/entity-api.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/storage-api.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/cordova.js">
+        </script>
+        <link href="files/resources/css/mobilebase.css" rel="stylesheet" type="text/css"
+        />
+        <script type="text/javascript" src="files/views/assets/js/services/model.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/Facebook_Helper.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/services/service.js">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="Facebook_FindEvent" id="Facebook_FindEvent"
+        class="type-interior" data-theme="b">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="false" data-back-btn-text="Back"
+            data-theme="b" name="mobileheader" id="Facebook_FindEvent_mobileheader" class="Facebook_FindEvent_mobileheader">
+                <h1 dsid="mobileheader">
+                    Find Events
+                </h1>
+                <!-- mobilenavbar_12 -->
+                <div data-role="navbar" id="Facebook_FindEvent_mobilenavbar_12" name="mobilenavbar_12"
+                dsid="mobilenavbar_12" class="Facebook_FindEvent_mobilenavbar_12" data-theme="b"
+                style="position: relative;">
+                    <ul>
+                        <!-- me -->
+                        <li>
+                            <a data-theme="b" data-icon="home" id="Facebook_FindEvent_me" dsid="me" name="me">
+                            Home
+                            </a>
+                        </li>
+                        <!-- FindEvent -->
+                        <li>
+                            <a data-theme="b" class="ui-btn-active ui-state-persist" data-icon="calendar" id="Facebook_FindEvent_FindEvent"
+                            dsid="FindEvent" name="FindEvent">
+                            Events
+                            </a>
+                        </li>
+                        <!-- login -->
+                        <li>
+                            <a data-theme="b" data-icon="lock" id="Facebook_FindEvent_login" dsid="login" name="login">
+                            Login
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="Facebook_FindEvent_mobilecontainer" name="mobilecontainer"
+            class="Facebook_FindEvent_mobilecontainer ui-content" dsid="mobilecontainer" data-theme="b">
+                <link href="Facebook_FindEvent.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="Facebook_FindEvent.js">
+                </script>
+                <!-- name -->
+                <div data-role="fieldcontain" class="Facebook_FindEvent_name ">
+                    <input type="text" name="name" dsid="name" value="" placeholder="What..." id="Facebook_FindEvent_name"
+                    tabindex="2" multiple data-theme="b" class="Facebook_FindEvent_name" />
+                </div>
+                <!-- location -->
+                <div data-role="fieldcontain" class="Facebook_FindEvent_location ">
+                    <input type="text" name="location" dsid="location" value="" placeholder="Where..."
+                    id="Facebook_FindEvent_location" tabindex="1" multiple data-theme="b" class="Facebook_FindEvent_location"
+                    />
+                </div>
+                <!-- find_events --><!--
+                --><a data-role="button" name="find_events" dsid="find_events" class="Facebook_FindEvent_find_events"
+                id="Facebook_FindEvent_find_events" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                x-apple-data-detectors="false" data-mini="false" data-theme="b" tabindex="3">
+                Find Events
+                </a><!--
+                --><!-- mobilelist_33 -->
+                <ul data-role="listview" id="Facebook_FindEvent_mobilelist_33" class="Facebook_FindEvent_mobilelist_33"
+                name="mobilelist_33" dsid="mobilelist_33" data-theme="b" data-divider-theme="b" data-count-theme="b"
+                style="" data-split-icon="carat-r">
+                    <!-- mobilelistitem_34 -->
+                    <li class="Facebook_FindEvent_mobilelistitem_34" data-icon="carat-r">
+                        <a id="Facebook_FindEvent_mobilelistitem_34" name="mobilelistitem_34" dsid="mobilelistitem_34"
+                        tabindex="8" class="Facebook_FindEvent_mobilelistitem_34">
+                        <h3>Item 1</h3>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- mobilefooter -->
+            <div data-role="footer" data-position="fixed" class="Facebook_FindEvent_mobilefooter"
+            name="mobilefooter" dsid="mobilefooter" id="Facebook_FindEvent_mobilefooter" data-theme="b">
+            </div>
+        </div>
+    </body>
+
+</html>

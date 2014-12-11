@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            Facebook_JoinedEvent
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="initial-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <link href="files/resources/lib/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="files/resources/lib/theme/flat-ui/flat-ui.css" rel="stylesheet" />
+        <link href="files/resources/lib/jquerymobile/1.4.4/jquery.mobile.structure-1.4.4.css"
+        rel="stylesheet" />
+        <script type="text/javascript" src="files/resources/lib/underscore/underscore.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-2.1.1.js">
+        </script>
+        <script type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1)
+                {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                }
+                if (navigator.userAgent.toLowerCase().indexOf("msie") != -1)
+                {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                }
+                if (navigator.userAgent.match(/iP/i))
+                {
+                    $(window).bind('orientationchange', function(event)
+                    {
+                        $('meta[name="viewport"]').attr('content', 'initial-scale=1.0,maximum-scale=1.0, ' + ((window.orientation == 90 || window.orientation == -90 || window.orientation == 270) ? "height=device-width,width=device-height" : "height=device-height,width=device-width"));
+                    }).trigger('orientationchange');
+                }
+            });
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/1.4.4/jquery.mobile-1.4.4.js">
+        </script>
+        <script type="text/javascript" src="files/resources/js/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/appery.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/component-manager.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/mapping-impl.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/entity-api.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/storage-api.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/cordova.js">
+        </script>
+        <link href="files/resources/css/mobilebase.css" rel="stylesheet" type="text/css"
+        />
+        <script type="text/javascript" src="files/views/assets/js/services/model.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/Facebook_Helper.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/services/service.js">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="Facebook_JoinedEvent" id="Facebook_JoinedEvent"
+        class="type-interior" data-theme="b">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="false" data-back-btn-text="Back"
+            data-theme="b" name="mobileheader" id="Facebook_JoinedEvent_mobileheader" class="Facebook_JoinedEvent_mobileheader">
+                <h1 dsid="mobileheader">
+                    Joined Event
+                </h1>
+                <!-- mobilenavbar_3 -->
+                <div data-role="navbar" id="Facebook_JoinedEvent_mobilenavbar_3" name="mobilenavbar_3"
+                dsid="mobilenavbar_3" class="Facebook_JoinedEvent_mobilenavbar_3" data-theme="b"
+                style="position: relative;">
+                    <ul>
+                        <!-- home -->
+                        <li>
+                            <a data-theme="b" data-icon="home" id="Facebook_JoinedEvent_home" dsid="home" name="home">
+                            Home
+                            </a>
+                        </li>
+                        <!-- events -->
+                        <li>
+                            <a data-theme="b" data-icon="calendar" id="Facebook_JoinedEvent_events" dsid="events"
+                            name="events">
+                            Events
+                            </a>
+                        </li>
+                        <!-- login -->
+                        <li>
+                            <a data-theme="b" data-icon="lock" id="Facebook_JoinedEvent_login" dsid="login"
+                            name="login">
+                            Login
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="Facebook_JoinedEvent_mobilecontainer" name="mobilecontainer"
+            class="Facebook_JoinedEvent_mobilecontainer ui-content" dsid="mobilecontainer" data-theme="b">
+                <link href="Facebook_JoinedEvent.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="Facebook_JoinedEvent.js">
+                </script>
+                <!-- eventname -->
+                <div name="eventname" id="Facebook_JoinedEvent_eventname" dsid="eventname" data-role="appery_label"
+                class="Facebook_JoinedEvent_eventname">
+                </div>
+                <!-- time -->
+                <div name="time" id="Facebook_JoinedEvent_time" dsid="time" data-role="appery_label"
+                class="Facebook_JoinedEvent_time">
+                </div>
+                <!-- location -->
+                <div name="location" id="Facebook_JoinedEvent_location" dsid="location" data-role="appery_label"
+                class="Facebook_JoinedEvent_location">
+                </div>
+            </div>
+            <!-- mobilefooter -->
+            <div data-role="footer" data-position="fixed" class="Facebook_JoinedEvent_mobilefooter"
+            name="mobilefooter" dsid="mobilefooter" id="Facebook_JoinedEvent_mobilefooter" data-theme="b">
+            </div>
+        </div>
+    </body>
+
+</html>

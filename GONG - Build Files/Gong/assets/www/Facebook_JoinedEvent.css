@@ -1,0 +1,50 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("files/resources/lib/jquerymobile/1.4.4/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* mobilenavbar_3 */
+.Facebook_JoinedEvent_mobilenavbar_3 {
+
+}
+.Facebook_JoinedEvent_mobilenavbar_3 .ui-grid-a .ui-block-a {
+	clear:none;
+}
+.ui-footer .Facebook_JoinedEvent_mobilenavbar_3 ul li:last-child a {
+	margin-right: 1px !important;
+}
+.ui-header .Facebook_JoinedEvent_mobilenavbar_3 ul li:last-child a {
+	margin-right: -1px !important;
+}
+.Facebook_JoinedEvent_mobilenavbar_3 ul.ui-grid-duo li:nth-child(even) a {
+	margin-right: 1px !important;
+}
+/* mobilecontainer */
+.ui-content.Facebook_JoinedEvent_mobilecontainer {
+	padding: 15px 15px 15px 15px;
+}
+/* eventname */
+.Facebook_JoinedEvent_eventname {
+	text-decoration: none; font-weight: bold; color: #7d7d7d; text-align: center; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 15px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* time */
+.Facebook_JoinedEvent_time {
+	text-decoration: none; font-weight: normal; text-align: left; font-family: Helvetica; font-size: 14px;
+	margin: 4px 0px 15px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* location */
+.Facebook_JoinedEvent_location {
+	text-decoration: none; font-weight: normal; text-align: left; font-family: Helvetica; font-size: 14px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilefooter */
+.Facebook_JoinedEvent_mobilefooter {
+	min-height:38px;
+}
